@@ -1,0 +1,93 @@
+/* Thiết lập phông chữ */
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Màu chữ chung */
+    margin: 0;
+    padding: 0;
+}
+
+/* Tiêu đề chính */
+h1 {
+    font-style: italic;
+    color: red;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-size: 36px;
+    border-bottom: 3px solid pink
+}
+
+/* Liên kết trong phần tiêu đề */
+a {
+    color: #c0392b; /* Màu đỏ */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hiệu ứng khi hover vào liên kết */
+a:hover {
+    color: #2980b9; /* Màu xanh dương khi hover */
+}
+
+/* Các phần menu */
+h2 {
+    background-color: rgb(241, 241, 189); /* Màu nền vàng */
+    color: red;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Định dạng danh sách */
+ul {
+    ul {
+        list-style-type: disc; /* Dấu chấm tròn */
+        padding-left: 20px; /* Khoảng cách bên trái của danh sách */
+    }
+}
+
+ul li {
+    padding: 10px;
+    font-size: 18px;
+}
+
+p a {
+    color: red;
+    font-size: 14px;
+}
+
+p a:hover {
+    color: #c0392b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+/* Đảm bảo dấu chấm nằm bên trong và gần tên món ăn */
+ul {
+    list-style-type: disc; /* Dấu chấm tròn */
+    list-style-position: inside; /* Đặt dấu chấm vào trong phần tử li */
+    padding-left: 0; /* Loại bỏ khoảng cách bên trái của danh sách */
+}
+
+/* Tô màu vàng cho tên món ăn và di chuyển sang phải */
+.food-name {
+    color: yellow; /* Màu vàng cho tên món ăn */
+    margin-left: 2px; /* Điều chỉnh khoảng cách giữa dấu chấm và tên món ăn */
+}
+
+/* Tô màu đỏ cho phần (v) */
+.v {
+    color: red; /* Màu đỏ cho (v) */
+}
+
+/* Tô vàng cho món ăn cụ thể nếu cần */
+.highlight {
+    color: rgb(245, 214, 131); /* Tô màu vàng cho tên món ăn */
+}
+

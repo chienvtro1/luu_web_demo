@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Cafe Menu</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Example Cafe Menu</h1>
+    <p> Starter
+        Main Courses
+        Desserts
+    </p>
+    <h2>Starters</h2>
+    <ul>
+        <li>Chestnut and Mushroom Goujons(v)</li>
+        <li>Goat Cheese(v)</li>
+        <li><span class="food-name highlight">Honey Soy Chicken Kebabs</span> <span class="v"> (v)</span></li>
+        <li>Seafood Salad(v)</li>
+    </ul>
+    <p><a href="#">Back to Top</a></p>
+
+    <h2>Desserts</h2>
+    <ul>
+        <li>Lemon Sorbet (v)</li>
+        <li>Chocolate Mud Pie(v)</li>
+        <li>Pecan Pie(v)</li>
+        <li>Selection of Fine Cheeses from Around the World(v)</li>
+    </ul>
+    <p><a href="#">Back to Top</a></p>
+
+    <footer>
+    </footer>
+</body>
+</html>
+<script>
+    // Tìm tất cả các thẻ <li>
+    const listItems = document.querySelectorAll("ul li");
+
+    // Duyệt qua từng mục trong danh sách
+    listItems.forEach(item => {
+        // Kiểm tra xem mục có chứa "(v)" không
+        if (item.textContent.includes("(v)")) {
+            // Thay thế "(v)" bằng một thẻ <span> chứa class v-highlight
+            item.innerHTML = item.innerHTML.replace("(v)", '<span class="v-highlight">(v)</span>');
+        }
+    });
+</script>
