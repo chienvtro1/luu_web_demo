@@ -34,7 +34,7 @@ body {
 
 /* HERO */
 .hero {
-    height: 25vh; /* chiếm toàn màn hình */
+    height: 35vh; /* chiếm toàn màn hình */
     background: url("../img/coffee-bg.jpg") center/cover no-repeat;
 
     display: flex;
